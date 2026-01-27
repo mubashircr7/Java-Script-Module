@@ -1,7 +1,7 @@
  // Multipol Condition of logical  Operator //
  
  
- const salary = 21000;
+ const salary = 51000;
  const isBCS = true;
  const height = 61;
  const hasCar = false;
@@ -30,7 +30,7 @@
 //         console.log('Esho vava kobul');
 //     }
 //     else{
-//         console.log('baag tui Mokbul');
+//         console.log('baag tui Abul');
 //     }
 
 // if(salary > 25000 && height > 72 && isBCS == true){
@@ -44,9 +44,18 @@
 
   // Complex Condition //
 
-  if ((salary > 25000 || hasCar ==true ) && isBCS == true){
+    
+  if ((salary > 25000 && hasCar ==true ) || isBCS == true){
     console.log('Esho vava Kobul');
   }
   else{
-    console.log('baag tui Mokbul');
+    console.log('baag tui bulbul');
+  }
+
+      const MSC = false;
+  if ((salary > 50000 && hasCar == true) || MSC == true){
+    console.log('ay vava kobul');
+  }
+  else{ 
+    console.log('baaaag tui kurul');
   }
