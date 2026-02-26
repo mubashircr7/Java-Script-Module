@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handler </title>
+</head>
+<body>
+    
+    <h1 id="page-title">Event Handler </h1>
+    <button id="btn-update-title">Update Title</button>
+    
+    <br>
+    <p id="user-info">No User</p>
+    <button id="btn-login">Login</button>
+
+
+
+
+
+     <br>
+    <!-- handle input text -->
+    <p id="name">No Name</p>
+    <input id="input-name" type="text" placeholder="Your Name" required>
+    <button id="btn-update">Update</button>
+    <script>
+    // set event listner-
+       document.getElementById('btn-update')
+       .addEventListener('click', function(){
+        // console.log('update button clicked'); // step no 1 done.
+    
+        // step 2: get the form in the input field
+        const inputName = document.getElementById('input-name');
+        // console.log(inputName); // step 2 done
+        const name = inputName.vlaue;
+        console.log('name', name);
+
+      
+        // step 3: 
+        const namePara = document.getElementById('name');
+        namePara.innerText = name;
+
+    
+    })
+    </script>
+    <script src="event-handler.js"></script>
+</body>
+</html>

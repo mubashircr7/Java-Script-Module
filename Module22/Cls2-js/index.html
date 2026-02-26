@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color: blue;}
+        li{color: goldenrod;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my header</h1>
+    </header>
+    <main>
+        <h1>Wellcome to the Tour Of Dom </h1>
+        <ul>
+            <li>jalali</li>
+            <li>choynong bipod</li>
+            <li>dour de</li>
+        </ul>
+    </main>
+
+    <script>
+       console.log('Document Object Model')
+       const student = {
+        name: 'Abul mia',
+        age: 21,
+        id: 125
+
+        study : function (subject){
+            console.log('Studing subject physics');
+        }
+       }
+
+        // document.getElementsByTagName
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for (const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        //al h1 Tags
+        const allHeadings = document.getElementsByTagName('h1')
+        for (const heading of allHeadings){
+            console.log(heading)
+        }
+    </script>
+    <script src="js/hello.js"></script>
+</body>
+</html>

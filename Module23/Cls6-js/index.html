@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+ </head>
+ <body>
+    <button id="btn-mouse">Micky Mouse minime</button>
+
+    <input type="text" id="user-text">
+    <input type="text" id="user-email">
+    <script>
+    //   document.getElementById('user-text').addEventListener('focus',
+    //     function(){
+    //        console.log('user about to the right name');
+    //     }
+    //   )
+    //   document.getElementById('user-email').addEventListener('focus', 
+    //   function(){
+    //        console.log('user about to the right email')
+    //   }
+    // )
+      document.getElementById('user-text').addEventListener('typing',
+        function(event){
+           console.log('typing', event.target.value);
+
+        }
+      )
+        document.getElementById('user-text').addEventListener('keydwon',
+        function(event){
+           console.log('typing', event.target.value);
+
+        }
+      )
+        document.getElementById('user-text').addEventListener('keyup',
+        function(event){
+           console.log('typing', event.target.value);
+
+        }
+      )
+    </script>
+
+    <script src="event.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="dom-traversing">
+    <meta name="keywords" content="dom-traversing">
+    <meta name="author" content="md mubashirul islam">
+    <link rel="stylesheet" href="style.css">
+
+    <title> dom-traversing</title>
+</head>
+<body>
+    <header>
+        <h1>WellCome To Dom</h1>
+    </header>
+
+    <main>
+      <section id="old-dhaka" class="song">
+         <h1>Dom</h1>
+         <p>Lorem ipsum dolor sit, amet <span>Oli Goli</span>
+            <span>Eliyas Khan</span> consectetur adipisicing elit. Est, quidem.</p>
+        <ul>
+            <li>jalali Set</li>
+            <li id ="fakir-lal">dor de</li>
+            <li class="foreign">choynong bipod</li>
+            <li class="foreign">fokir lal</li>
+        </ul> 
+      </section>
+
+      <section class="food">
+        <h1 id="food-title">Food I love</h1>
+        <ul>
+            <li>Rice</li>
+            <li>poteto</li>
+            <li>Lentills</li>
+            <li>Fish</li>
+            <li class="foreign"> Pijja</li>
+            <li class="foreign"> Burger</li>
+            <li class="foreign"> Pasta</li>
+        </ul>
+      </section>
+    </main>
+
+
+
+
+    <script>
+          const foodTitleH1 = document.getElementById('food-title');
+          console.log(foodTitleH1.innerText);
+          
+          const songItem = document.getElementById('fakir-lal')
+          songItem.innerText = 'Bangla Rap R thagbo na'
+
+        // get element by class name 
+         
+         const foreignElements = document.getElementsByClassName('foreign');
+         console.log(foreignElements);
+
+         for(const element of foreignElements){
+             console.log(element);
+         }
+
+         // quarry selector all 
+         const spanElement = document.querySelectorAll('#old-dhaka p span');
+         for (const span of spanElement){
+            console.log(span.innerText);
+         } 
+    </script>
+    <script src="class-id.js"></script>
+</body>
+</html>
