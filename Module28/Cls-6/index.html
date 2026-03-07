@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fecth api JSON show in ui </title>
+
+    <style>
+        #post-container{
+           max-width: 1100px;
+           margin: 0 auto;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-gap: 20px;
+           row-gap: 30px;
+        }
+        .post-card{
+            border: 2px solid #ddd;
+            margin-top: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border-top: green 5px solid;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+        }
+        .post-card p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadData()">Load-data</button>
+    <button onclick="loadPost()">Load-Post</button>
+    <div id="post-container">
+  
+    </div>
+
+    <script src="card-desgin.js"></script>
+</body>
+</html>
